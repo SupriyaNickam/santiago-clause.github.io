@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+
+<html> 
+
+<head>
+	<title> Oru- Registration </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+      window.onload = function(){
+   document.getElementById('send').onclick = function(e){
+         alert("Thank you, " + document.getElementById("name").value + ", you have successfully registered!");
+		 
+       return false;
+   }
+}
+</script>
+	<style>
+	
+	
+		body {
+		background-image: url("background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		h1,h2{color:white}
+		
+		p {
+		display: block;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 4em;
+		margin-right: 4em;
+		}
+		
+		
+		.content {
+		background-color: #AD41EA;
+		color: white;
+		margin-left: 550px;
+		margin-right: 500px;
+		padding: 50px;
+		padding-right:20 px;
+		font-size: 20px;
+		box-sizing: content-box;
+		}
+		input[type=text], select, textarea {
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */  
+		border: 1px solid #ccc; /* Gray border */
+		border-radius: 4px; 
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		}
+		input[type=radio]{
+		
+		padding: 12px; /* Some padding */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		}
+		
+		
+		input[type=checkbox]{
+		
+		padding: 12px; /* Some padding */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		}
+		input[type=number]{
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		}
+		input[type=email]{
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */
+		margin-top: 6px; /* Add a top margin */
+		margin-bottom: 16px; /* Bottom margin */
+		}
+		
+		header {
+		padding: 0px;
+		text-align: center;
+		font-size: 23px;
+		color: white;
+		}
+
+		/* Container for flexboxes */
+		section {
+		display: -webkit-flex;
+		display: flex;
+		}
+
+	.button{
+		background-color: blue;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	
+	}
+
+		
+
+		/* Style the content */
+		article {
+		-webkit-flex: 2;
+		-ms-flex: 2;
+		flex: 2;
+		background-color: #F9A6B3;
+		padding: 10px;
+		}
+
+		/* Style the footer */
+		footer {
+		background-color: #FF8CCB;
+		padding: 10px;
+		margin: 50px;
+		margin-left: 200px;
+		margin-right: 200px;
+		text-align: center;
+		font-size: 25px;
+		font-style: bolder;
+		color: white;
+		border-radius: 4px;
+		}
+
+
+		@media (max-width: 600px) {
+		section {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		}
+		}
+		
+		
+		
+		
+	</style>
+	 
+</head>
+
+<body>
+	<header>
+	<center><img src="blue-paper-boat.png" alt="paper boat" width="1200" height="800">
+	
+	
+	 
+	<h3>
+		Form:
+	</h3>
+	</header>
+	
+	<section>
+
+    <div class = "content">
+    <p>
+	
+ <form><center>
+  <label for="name">Name:			 </label>
+  <input type="text" id="name" name="name" pattern="[a-zA-Z]+" placeholder="Your name" required>
+  <br>
+  <label for="name">Email Address:  		 </label>
+  <input type="email" id="email" name="email" placeholder="Your e-mail ID" pattern=".+@company\.com" required>
+  <br>
+  <label for="name">Age:        </label>
+  <input type="number" id="age" name="age" min="10" max="80" placeholder="Age in years">
+  <br>
+  <label for="name">Phone number:         </label>
+  <input type="number" id="number" name="phone" placeholder="10-digit number" pattern="^[6-9]\d{9}$" title="Number should start with 6/7/8/9">
+  </center>
+</form>
+  
+  </center>
+ </form>
+	
+	
+	</P> 
+	</div>		
+   </section>
+	</center>
+	
+	<footer>
+  <p>
+  <input class="button" type="submit" name="submit" id="send" value="Submit" width="200px" />
+  </p>
+</footer>
+	
+	
+
+		
+
+		
+
+</body>
+
+</html>
+
+
+
+
+
+
+</div>
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+
+<html> 
+
+<head>
+	<title> Oru -The Origami Page </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	
+		body {
+		background-image: url("background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		h1,h2{color:white}
+		
+		p {
+		display: block;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 4em;
+		margin-right: 4em;
+		}
+		
+		a:link {
+        color: #AA1B33; 
+		background-color: transparent; 
+		text-decoration: none;
+		}
+
+		a:visited {
+		color: green;
+		background-color: transparent;
+		text-decoration: none;
+		}
+
+		a:hover {
+		color: #3F0982;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+
+		a:active {
+		color: yellow;
+		background-color: transparent;
+		text-decoration: underline;
+		}
+		
+		.content {
+		background-color: #AD41EA;
+		color: white;
+		margin-left: 50px;
+		margin-right: 200px;
+		padding: 10px;
+		font-size: 20px;
+		box-sizing: content-box;
+		}
+		
+		header {
+		padding: 0px;
+		text-align: center;
+		font-size: 23px;
+		color: white;
+		}
+
+		/* Container for flexboxes */
+		section {
+		display: -webkit-flex;
+		display: flex;
+		}
+
+		/* Style the navigation menu */
+		nav {
+		-webkit-flex: 3;
+		-ms-flex: 3;
+		flex: 3;
+		background-color: #FF8CCB;
+		
+		padding: 20px;
+		width: 500px;
+		margin-left: 200px;
+		}
+
+		
+
+		/* Style the content */
+		article {
+		-webkit-flex: 2;
+		-ms-flex: 2;
+		flex: 2;
+		background-color: #F9A6B3;
+		padding: 10px;
+		}
+
+		/* Style the footer */
+		footer {
+		background-color: #FF8CCB;
+		padding: 10px;
+		margin: 50px;
+		margin-left: 200px;
+		margin-right: 200px;
+		text-align: center;
+		font-size: 25px;
+		font-style: bolder;
+		color: white;
+		}
+
+
+		@media (max-width: 600px) {
+		section {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		}
+		}
+		
+		
+		
+		
+	</style>
+	 
+</head>
+
+<body>
+	<header>
+	<center><img src="blue-paper-boat.png" alt="paper boat" width="1200" height="800">
+	
+	
+	<h1>Oru</h1> 
+	<h2>Origami and Math art</h2>
+	<p>The perfect destination for all Origami enthusiasts!</p> 
+	<h3>
+		Are you interested in learning <i>origami</i>?  If your answer is yes, then you've come to the right place!
+	</h3>
+	</header>
+	
+	<section>
+	<nav>
+    <ul style="list-style-type:circle;">
+      <li><a href="http://www.origami-make.org/howto-origami-easy.php" id="origami" title="Learn Easy Origami Models">Easy Origami</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-paper.php" id="origami" title="Origami paper">Origami Paper</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-base.php" id="origami" title="Origami bases">Origami Base</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-fold.php" id="origami" title="Origami folding techniques">Origami Fold</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-instructions.php" id="origami" title="Origami instructions to learn all models">Origami Instructions</a></li>
+	  <li><a href="http://www.origami-make.org/howto-make-origami.php" id="origami" title="Learn Basic folding techniques">How to make origami</a></li>
+	  <li><a href="http://www.origami-make.org/how-to-origami-diagrams.php" id="origami" title="Origami Diagrams">Oriagmi Diagrams</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-kids.php" id="origami" title="Origami for children">Origami for Kids</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-3d.php" id="origami" title="Learn 3D Origami Models">3D Origami</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-modular.php" id="origami" title="Learn Modular Origami Models">Modular</a></li>
+	  <li><a href="http://www.origami-make.org/howto-origami-traditional.php" id="origami" title="Learn Traditional Origami Models">Traditional</a></li>
+    </ul>
+  </nav>
+    <div class = "content">
+    <p>
+		You will be able to learn from simple models to advance ones here.If you have not folded any models before, you should learn both
+	<a href="valley-fold.html"> valley-fold</a> and 
+	<a href="mountain-fold.html">mountain-fold</a>. 
+	You must know what these two folding techniques are before working on any model.
+	Initially you should get started with easy models</a>. It is good to learn these models first before tackling on more advanced ones. <br /><br />
+            If you are an experienced folder, then you can start working on models with intermediate level.
+			Some of the available patterns are:
+			<select onchange="location = this.value;">
+			
+			<option value="http://www.origami-make.org/howto-origami-airplane.php" id="origami" title="Learn how to make origami airplane">Airplane</a></option>
+			<option value="http://www.origami-make.org/howto-origami-bag.php" id="origami" title="Learn how to make a bag">Bag</a></option>
+			<option value="http://www.origami-make.org/howto-origami-candy.php" id="origami" title="Learn how to make origami candy">Candy</a></option>
+			
+			<option value="http://www.origami-make.org/howto-origami-dinosaur.php" id="origami" title="Learn how to make origami dinosaur">Dinosaur</a></option>
+			<option value="http://www.origami-make.org/howto-origami-elephant.php" id="origami" title="Learn how to make origami elephant">Elephant</a></option>
+			<option value="http://www.origami-make.org/howto-origami-fish.php" id="origami" title="Learn how to make origami fish">Fish</a></option>
+			<option value="http://www.origami-make.org/howto-origami-giraffe.php" id="origami" title="Learn how to make origami giraffe">Giraffe</a></option>
+			
+			<option value="http://www.origami-make.org/howto-origami-heart.php" id="origami" title="Learn how to make origami heart">Heart</a></option>
+			<option value="http://www.origami-make.org/howto-origami-insect.php" id="origami" title="Learn how to make origami insect">Insect</a></option>
+			<option value="http://www.origami-make.org/howto-origami-lantern.php" id="origami" title="Learn how to make origami lantern">Lantern</a></option>
+			<option value="http://www.origami-make.org/howto-origami-man.php" id="origami" title="Learn how to make origami man">Man</a></option>
+			
+			<option value="http://www.origami-make.org/howto-origami-ninja-star.php" id="origami" title="Learn how to make origami ninja star">Ninja Star</a>option>
+			<option value="http://www.origami-make.org/howto-origami-panda.php" id="origami" title="Learn how to make origami panda">Panda</a></option>
+			<option value="http://www.origami-make.org/howto-origami-rocket.php" id="origami" title="Learn how to make origami rocket">Rocket</a></option>
+			<option value="http://www.origami-make.org/howto-origami-santa-claus.php" id="origami" title="Learn how to make origami santa claus models">Santa Claus</a></option>
+			
+			<option value="http://www.origami-make.org/howto-origami-thanksgiving.php" id="origami" title="Learn how to make Thanksgiving origami models">Thanksgiving</a></option>
+			<option value="http://www.origami-make.org/howto-origami-valentines.php" id="origami" title="Learn how to make origami Valentine models">Valentines</a></option>
+			<option value="http://www.origami-make.org/howto-origami-wallet.php" id="origami" title="Learn how to make origami wallet">Wallet</a></option>
+			</select></p> 
+	</div>		
+	</article></section>
+	</center>
+	
+	<footer>
+  <p>
+  <a href="Oru-Register.html"> Register yourself for the upcoming event! </a>
+  </p>
+</footer>
+	
+	
+
+		
+
+		
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	/* Container for flexboxes */
+		section {
+		display: -webkit-flex;
+		display: flex;
+		
+	@media (max-width: 600px) {
+		section {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		}
+	
+	</style>
+</head>
+<body>
+
+<h2>Registeration</h2>
+<section>
+<center>
+<form>
+  <label for="name">Name: *</label>
+  <input type="text" id="name" name="name" pattern="[a-zA-Z]+" placeholder="Your name" required>
+  <br>
+  <label for="name">Email Address: *</label>
+  <input type="email" id="email" name="email" placeholder="Your e-mail ID" pattern=".+@company\.com" required>
+  <br>
+  <label for="name">Age: </label>
+  <input type="number" id="age" name="age" min="10" max="80" placeholder="Age in years">
+  <br>
+  <label for="name">Phone number: </label>
+  <input type="number" id="number" name="phone" placeholder="10-digit number" pattern="[6-9]+[0-9]{9}" title="Number should start with 6/7/8/9">
+</form>
+</center>
+</section>
+
+
+</body>
+</html>
